@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작은옷장 설명</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #727272;
+            font-family: "Nanum Pen Script", cursive;
+        }
+
+        body {
+            background-color: #d8d8d8;
+        }
+
+        div {
+            margin-top: 50%;
+            margin-bottom: 100%;
+            height: 300px;
+        }
+
+        .intro h1 {
+            font-size: 40px;
+        }
+
+        .nav {
+            margin-bottom: 0;
+            transform: none;
+            height: 40px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            background-color: #d8d8d8;
+        }
+
+        .nav h1 {
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .nav h1:hover {
+            color: white;
+        }
+
+        @media (min-width: 800px) {
+            div {
+                margin-top: 40%;
+            }
+
+            h1 {
+                font-size: 45px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            .nav {
+                height: 50px;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            div {
+                margin-top: 30%;
+                height: 380px;
+            }
+
+            .intro h1 {
+                font-size: 60px;
+            }
+
+            h2 {
+                font-size: 40px;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+        }
+
+        @media (min-width: 1500px) {
+            div {
+                margin-top: 25%;
+            }
+        }
+
+        @media (min-width: 1800px) {
+            div {
+                margin-top: 15%;
+                margin-bottom: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro">
+        <h1>작은 옷장</h1>
+        <h3>Made By js</h3>
+        <br>
+        <h1>어서오세요, 작은 옷장입니다.</h1>
+        <br>
+        <h2>작은 옷장은 소상공인들을 위한 쇼핑몰 웹입니다.</h2>
+        <br>
+        <h2>저희 JS의 최종적인 목표는 모든 사람들이</h2>
+        <h2>어려움 없이 사용할 수 있는 웹을 제작하는 것입니다.</h2>
+    </div>
+    <div class="member">
+        <h2>송진섭 : 프론트엔드, 백엔드★, 서버관리</h2>
+        <h2>전지현 : 프론트엔드★, UI디자인, 자료조사</h2>
+    </div>
+    <div class="project" style="margin-bottom: 50px;">
+        <h2>팀명 : JS</h2>
+        <h2>팀원 : 송진섭, 전지현</h2>
+        <h2>프로젝트명 : 작은옷장(Episode23)</h2>
+        <h2>소개 : 소상공인을 위한 웹 쇼핑몰</h2>
+        <h2>언어 : html, css, js, jsp, mysql, aws 등</h2>
+    </div>
+    <div class="nav">
+        <h1 onclick="intro()">서론</h1>
+        <h1 onclick="member()">멤버</h1>
+        <h1 onclick="project()">프로젝트 소개</h1>
+    </div>
+</body>
+<script>
+    function intro() {
+        document.getElementsByTagName("div")[0].scrollIntoView();
+    }
+
+    function member() {
+        document.getElementsByTagName("div")[1].scrollIntoView();
+    }
+
+    function project() {
+        document.getElementsByTagName("div")[2].scrollIntoView();
+    }
+
+</script>
+
+</html>
