@@ -1,74 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>header</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
 
-      * {
-        margin: 0;
-        padding: 0;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>header</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
 
-      .header {
-        position: fixed;
-        width: 100%;
-        height: 5rem;
-        background-color: #d6d8c5;
-        display: inline-flex;
-      }
+    * {
+      margin: 0;
+      padding: 0;
+      color: gray;
+    }
 
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #d6d8c5;
+      display: inline-flex;
+      height: 40px;
+    }
+
+    .title {
+      font-family: "Alkatra", cursive;
+      font-size: 15px;
+      margin-top: 3px;
+    }
+
+    .nav {
+      margin-top: 3px;
+    }
+
+    .nav label {
+      font-family: "Noto Sans KR", sans-serif;
+      font-size: 10px;
+      margin-left: 9px;
+      margin-right: 9px;
+    }
+
+    .nav label:hover {
+      color: white;
+    }
+
+    .bag {
+      width: 15px;
+      height: 15px;
+      margin-top: 5px;
+    }
+
+    @media (min-width: 500px) {
       .title {
-        font-family: "Alkatra", cursive;
-        width: 10%;
-        position: absolute;
-        left: 1%;
-        top: 50%;
-        transform: translateY(-50%);
-        color: gray;
+        font-size: 20px;
       }
 
       .nav {
-        width: 30%;
-        height: 50px;
-        position: absolute;
-        left: 40%;
-        top: 50%;
-        transform: translateY(-50%);
+        margin-top: 8px;
       }
 
       .nav label {
-        font-size: 20px;
-        margin-right: 3%;
-        font-family: "Noto Sans KR", sans-serif;
-        color: gray;
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
       }
 
       .bag {
-        width: 30px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-80%);
-        margin-left: 5%;
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        margin-top: 8px;
       }
-    </style>
-  </head>
-  <body>
-    <div class="header">
-      <h1 class="title">Episode23</h1>
-      <div class="nav">
-        <label onclick="Clothes()">Clothes</label>
-        <label onclick="Accessory()">Accessory</label>
-        <label onclick="Item()">Item</label>
-        <label onclick="Best()">Best</label>
-        <label onclick="login_join()">login/join</label>
-        <img class="bag" src="./bag.png" alt="bag" />
-      </div>
+    }
+
+    @media (min-width: 800px) {
+      .header {
+        height: 50px;
+      }
+
+      .title {
+        font-size: 30px;
+      }
+
+      .nav {
+        margin-top: 10px;
+      }
+
+      .nav label {
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .bag {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+        margin-top: 8px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+
+      .nav label {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      .bag {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="title">Episode23</h1>
+    <div class="nav">
+      <label>clothes</label>
+      <label>accessories</label>
+      <label>iteam</label>
+      <label>best</label>
+      <label>login/join</label>
     </div>
-  </body>
-  <script></script>
+    <img src="../asset/bag.png" alt="bag" class="bag">
+  </div>
+</body>
+
 </html>
