@@ -1,21 +1,21 @@
 # 1. 프로젝트 개요
-- 프로젝트 주제 및 선정 배경
-- 개발 및 수행 목표
+- 작은 옷장
+- 소상공인들을 위한 웹 쇼핑몰
 
 # 2. 팀 소개
 ![팀 소개 사진](team_photo.jpg)
 
-| 이름     | 이메일             | 역할        | 깃허브(또는 개인사이트)      |
+| 이름     | 이메일             | 역할        | 깃허브 아이디      |
 |--------|-------------------|-----------|---------------------------|
-| 팀원 1 | team1@example.com | 개발자     | [GitHub](https://github.com/team1) |
-| 팀원 2 | team2@example.com | 디자이너  | [GitHub](https://github.com/team2) |
-| 팀원 3 | team3@example.com | 프로젝트 매니저 | [GitHub](https://github.com/team3) |
+| 팀원 1 | sjs335946@gmail.com | 프론트, 백엔드     | https://github.com/Ellui052 |
+| 팀원 2 | wjswlguswjswlgus616@naver.com | 프론트, 자료조사  | https://github.com/jihyeon0616 |
 
 # 3. 사용 기술
-- 개발에 사용한 기술
-- 개발에 소요된 물품 및 준비물
+- 프론트엔드 : HTML, CSS, JS
+- 백엔드 : 스프링부트
 
-# 4. 프로젝트 진행 과정(월별 진행상황)
+# 4. 프로젝트 진행 과정
+
 
 # 5. 프로젝트 상세 소개
 - 레이아웃 세부 설명
