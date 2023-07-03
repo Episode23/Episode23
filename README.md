@@ -11,13 +11,7 @@
 | 팀원 2 | mailto:wjswlguswjswlgus616@naver.com | 디자인, 프론트, 자료조사 | https://github.com/jihyeon0616 |
 
 # 3. 사용 기술
-
-!https://images.velog.io/images/offdutybyblo/post/65c734fd-077c-4a68-8b3b-557c52428511/htmljscss.jpeg
-
 - 프론트엔드 : HTML, CSS, JS
-
-!https://i0.wp.com/blog.codestates.com/wp-content/uploads/2022/11/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC.png?resize=750%2C354&ssl=1
-
 - 백엔드 : Spring Boot
 
 # 4. 프로젝트 진행 과정
