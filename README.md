@@ -17,7 +17,7 @@
 # 4. 프로젝트 진행 과정
 
 # 5. 프로젝트 상세 소개
-
+<img alt="Html" src ="https://github.com/Episode23/Episode23/issues/1#issue-1785139562"/>
 - 레이아웃 세부 설명
 - 데이터베이스 / 데이터플로우 / 시스템 구조
 - 사용자 수행에 따른 세부 동작 과정
