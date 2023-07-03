@@ -7,8 +7,9 @@
 
 | 이름 | <img src="https://img.shields.io/badge/Mail-EA4335?style=flat-square&logo=Gmail&logoColor=black"/> | 역할 | <img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> |
 | --- | --- | --- | --- |
-| 팀원 1 | mailto:sjs335946@gmail.com | 프론트, 백엔드 | https://github.com/Ellui052 |
-| 팀원 2 | mailto:wjswlguswjswlgus616@naver.com | 디자인, 프론트, 자료조사 | https://github.com/jihyeon0616 |
+| 송진섭 ![ellui](https://github.com/Episode23/Episode23/assets/89927726/b2b9264b-09a3-4bfc-8978-27d70b385c93)
+ | sjs335946@gmail.com | 프론트, 백엔드 | https://github.com/Ellui052 |
+| 전지현 | wjswlguswjswlgus616@naver.com | 디자인, 프론트, 자료조사 | https://github.com/jihyeon0616 |
 
 # 3. 사용 기술
 - 프론트엔드 : <img alt="Html" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/> <img alt="Css" src ="https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/> <img alt="JavaScript" src ="https://img.shields.io/badge/JavaScriipt-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=black"/>
