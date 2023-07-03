@@ -51,9 +51,9 @@
 상품 상세 페이지
 
 ----
-![dbERD](https://github.com/Episode23/Episode23/assets/89927726/bbbdb457-76e1-4343-8564-23ace6ddf7c5)
+![image](https://github.com/Episode23/Episode23/assets/89927726/84ca9159-d9ef-4796-827d-7ff3a80a1823)
 
-dbERD
+ERD
 
 - 사용자 수행에 따른 세부 동작 과정
 
