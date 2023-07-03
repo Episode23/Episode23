@@ -50,7 +50,9 @@
 ![상품 상세 페이지](https://user-images.githubusercontent.com/89927726/250426319-0a2043ea-c9a4-46e1-806d-1a2748d4085c.jpg)
 상품 상세 페이지
 
+----
 ![dbERD](https://github.com/Episode23/Episode23/assets/89927726/bbbdb457-76e1-4343-8564-23ace6ddf7c5)
+
 dbERD
 
 - 사용자 수행에 따른 세부 동작 과정
