@@ -17,7 +17,8 @@
 # 4. 프로젝트 진행 과정
 
 # 5. 프로젝트 상세 소개
-> ![메인 페이지](https://user-images.githubusercontent.com/89927726/250426015-a424fa9a-149e-42c4-9b77-ecb2fab7c36f.jpg)
+![메인 페이지](https://user-images.githubusercontent.com/89927726/250426015-a424fa9a-149e-42c4-9b77-ecb2fab7c36f.jpg)?
+메인 페이지
 
 - 레이아웃 세부 설명
 - 데이터베이스 / 데이터플로우 / 시스템 구조
