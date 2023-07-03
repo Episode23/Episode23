@@ -17,10 +17,27 @@
 # 4. 프로젝트 진행 과정
 
 # 5. 프로젝트 상세 소개
-![메인 페이지](https://user-images.githubusercontent.com/89927726/250426015-a424fa9a-149e-42c4-9b77-ecb2fab7c36f.jpg){: width="40%"}
+![메인 페이지](https://user-images.githubusercontent.com/89927726/250426015-a424fa9a-149e-42c4-9b77-ecb2fab7c36f.jpg)
 메인 페이지
 
-- 레이아웃 세부 설명
+![로그인 페이지](https://user-images.githubusercontent.com/89927726/250426076-ebcfd441-bd0d-4fb8-9349-24a125f71851.jpg)
+로그인 페이지
+
+![회원가입 페이지](https://user-images.githubusercontent.com/89927726/250426130-c6219411-9749-4b3b-9f2b-facf9dd0a480.jpg)
+회원가입 페이지
+
+![사용자 정보 페이지](https://user-images.githubusercontent.com/89927726/250426184-4a01b051-f442-4b21-8992-f35a67cc629a.jpg)
+사용자 정보 페이지
+
+![상품 등록 페이지](https://user-images.githubusercontent.com/89927726/250426257-b48e1b36-8562-4e90-9da4-b6cb2bdd56ee.jpg)
+상품 등록 페이지
+
+![장바구니 페이지](https://user-images.githubusercontent.com/89927726/250426292-7f5bb57b-5bcc-4f12-bad7-b7e2fd2c2b12.jpg)
+장바구니 페이지
+
+![상품 상세 페이지](https://user-images.githubusercontent.com/89927726/250426319-0a2043ea-c9a4-46e1-806d-1a2748d4085c.jpg)
+상품 상세 페이지
+
 - 데이터베이스 / 데이터플로우 / 시스템 구조
 - 사용자 수행에 따른 세부 동작 과정
 
