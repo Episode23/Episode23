@@ -5,6 +5,7 @@
 
 # 2. 팀 소개
 ![ellui](https://github.com/Episode23/Episode23/assets/89927726/b2b9264b-09a3-4bfc-8978-27d70b385c93)
+
 송진섭
 
 <img alt="GitHub" src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/> : https://github.com/Ellui052
