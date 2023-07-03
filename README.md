@@ -4,7 +4,7 @@
 - 소상공인들을 위한 웹 쇼핑몰
 
 # 2. 팀 소개
-![ellui](https://github.com/Episode23/Episode23/assets/89927726/b2b9264b-09a3-4bfc-8978-27d70b385c93)
+![Ellui](https://github.com/Episode23/Episode23/assets/89927726/f1815ebe-23fe-40b4-9ec1-bdfb083ebcde)
 
 송진섭
 
