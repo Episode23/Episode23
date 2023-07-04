@@ -4,7 +4,7 @@
 - 소상공인들을 위한 웹 쇼핑몰
 
 # 2. 팀 소개
-![Ellui](https://github.com/Episode23/Episode23/assets/89927726/f1815ebe-23fe-40b4-9ec1-bdfb083ebcde)
+
 
 송진섭
 
@@ -13,6 +13,8 @@
 <img src="https://img.shields.io/badge/Mail-EA4335?style=flat-square&logo=Gmail&logoColor=black"/> : sjs335946@gmail.com
 
 역할 : 프론트, 백엔드
+
+![전지현](https://github.com/Episode23/Episode23/assets/89927726/e811c7bb-9329-4a68-a04b-16af1335c18d)
 
 전지현
 
