@@ -14,7 +14,7 @@
 
 역할 : 프론트, 백엔드
 
-<img src="https://github.com/Episode23/Episode23/assets/89927726/e811c7bb-9329-4a68-a04b-16af1335c18d" width="100" height="150"/>)
+<img src="https://github.com/Episode23/Episode23/assets/89927726/e811c7bb-9329-4a68-a04b-16af1335c18d" width="100" height="120"/>)
 
 전지현
 
