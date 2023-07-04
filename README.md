@@ -46,7 +46,7 @@
 - 개발한 기능의 정확성 검증
 
 # 5. 프로젝트 상세 소개
-![메인 페이지](https://user-images.githubusercontent.com/89927726/250426015-a424fa9a-149e-42c4-9b77-ecb2fab7c36f.jpg)
+![메인페이지](https://github.com/Episode23/Episode23/assets/89927726/2b54bf87-e9fe-43cb-9cf7-51c832be3e7c)
 메인 페이지
 
 ![로그인 페이지](https://user-images.githubusercontent.com/89927726/250426076-ebcfd441-bd0d-4fb8-9349-24a125f71851.jpg)
