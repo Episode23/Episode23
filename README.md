@@ -61,10 +61,10 @@
 ![상품 등록 페이지](https://user-images.githubusercontent.com/89927726/250426257-b48e1b36-8562-4e90-9da4-b6cb2bdd56ee.jpg)
 상품 등록 페이지
 
-![장바구니 페이지](https://user-images.githubusercontent.com/89927726/250426292-7f5bb57b-5bcc-4f12-bad7-b7e2fd2c2b12.jpg)
+![장바구니 페이지](https://github.com/Episode23/Episode23/assets/89927726/94bab008-e39b-4141-a215-317e4c484069)
 장바구니 페이지
 
-![상품 상세 페이지](https://user-images.githubusercontent.com/89927726/250426319-0a2043ea-c9a4-46e1-806d-1a2748d4085c.jpg)
+![상품 상세 페이지](https://github.com/Episode23/Episode23/assets/89927726/89b1abec-ae9f-4138-a051-4cb6ed463958)
 상품 상세 페이지
 
 ----
