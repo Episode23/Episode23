@@ -70,7 +70,7 @@
 ----
 ![image](https://github.com/Episode23/Episode23/assets/89927726/84ca9159-d9ef-4796-827d-7ff3a80a1823)
 
-ERD
+ERD - ERD는 참조용으로 실제 DB 형식과는 차이가 있을 수 있습니다.
 
 - 사용자 수행에 따른 세부 동작 과정
 
