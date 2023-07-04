@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작은 옷장</title>
+    <style>
+        body {
+            background-color: #F4EEE3;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #F4EEE3;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-size: 15px;
+            color: #707070;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .nav a {
+            margin-right: 5px;
+            text-decoration: none;
+            color: #707070;
+            font-size: 10px;
+        }
+
+        .nav a:hover {
+            color: #D6D8C5;
+        }
+
+        .image-text-container .text-overlay {
+            position: absolute;
+            top: 170px;
+            right: 600px;
+            padding: 10px;
+            font-size: 30px;
+            color: #707070;
+        }
+
+        .image-text-container .text-overlay-a {
+            position: absolute;
+            top: 280px;
+            right: 400px;
+            padding: 10px;
+            font-size: 20px;
+            color: #707070;
+        }
+
+        select.transparent {
+            background-color: transparent;
+            position: absolute;
+            top: 580px;
+            right: 430px;
+            padding: 10px;
+            width: 600px;
+            height: 60px;
+        }
+
+        button.btn {
+            background-color: transparent;
+            position: absolute;
+            top: 660px;
+            right: 430px;
+            padding: 10px;
+            width: 600px;
+            height: 70px;
+            background-color: #d6d8c5;
+        }
+
+        .image-text-container img {
+            margin-top: 150px;
+            margin-left: 300px;
+            padding: 5px;
+            width: 434px;
+            height: 579px;
+        }
+
+        .img-btn {
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: #d6d8c5;
+            margin-left: 314px;
+        }
+
+        @media screen and (min-width: 601px) {
+            .logo-text {
+                font-size: 30px;
+            }
+
+            .header {
+                padding: 20px 40px;
+            }
+
+            .nav {
+                display: flex;
+                align-items: center;
+            }
+
+            .nav a {
+                margin-right: 15px;
+                text-decoration: none;
+                color: #707070;
+                display: inline-block;
+                font-size: 18px;
+            }
+
+            .nav a:hover {
+                color: #D6D8C5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<th:block th:replace="header :: header"></th:block>
+
+<div class="image-text-container">
+    <img th:each="image, i : ${product.getImages()}" th:id="image + ${i}" th:src="@{${image.getLink()}}">
+    <div class="text-overlay"><b th:text="${product.getName()}">논픽션 젠틀나잇 핸드크림 50ml</b>
+        <br>
+        <b th:text="${product.getCost()} + '원'"></b>
+    </div>
+    <div class="text-overlay-a" th:text="${product.getContent()}"></div>
+
+    <select class="transparent">
+        <option value="option1" th:each="option : ${product.getProductSSs()}"
+                th:utext="${option.getSize()} + '/' + ${option.getStock()}">옵션 1
+        </option>
+    </select>
+    <form method="post" th:action="@{/add/cart(id=${product.getId()})}">
+        <button type="submit" class="btn">Add to Cart</button>
+    </form>
+    <button onclick="previousImage()" class="img-btn">이전</button>
+    <button onclick="nextImage()" class="img-btn">다음</button>
+</div>
+
+<script>
+    let currentImageIndex = 0;
+    const images = document.querySelectorAll(".image-text-container img");
+    const textOverlay = document.querySelector(".text-overlay");
+    const textOverlayA = document.querySelector(".text-overlay-a");
+
+    function showImage(index) {
+        if (index < 0) {
+            index = images.length - 1;
+        } else if (index >= images.length) {
+            index = 0;
+        }
+
+        for (let i = 0; i < images.length; i++) {
+            if (i === index) {
+                images[i].style.display = "block";
+            } else {
+                images[i].style.display = "none";
+            }
+        }
+
+        currentImageIndex = index;
+    }
+
+    function previousImage() {
+        showImage(currentImageIndex - 1);
+    }
+
+    function nextImage() {
+        showImage(currentImageIndex + 1);
+    }
+
+    showImage(currentImageIndex);
+
+
+    function main() {
+        location.href = '/view/main';
+    }
+</script>
+</body>
+
+</html>
