@@ -5,7 +5,7 @@
 
 # 2. 팀 소개
 
-<img src="https://github.com/Episode23/Episode23/assets/89927726/40b761bb-b8dd-4ebb-908b-119a97d96a73" width="100" height="120"/>)
+<img src="https://github.com/Episode23/Episode23/assets/89927726/40b761bb-b8dd-4ebb-908b-119a97d96a73" width="100" height="120"/>
 
 송진섭
 
