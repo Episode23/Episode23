@@ -1,5 +1,5 @@
 ## 시연 동영상 링크
- https://youtu.be/ClEGGsOPzkw 
+ https://youtu.be/S4cNBFJo5wI 
 
 # 1. 프로젝트 개요
 
