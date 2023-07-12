@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.w3.org/1999/xhtml">
+<html>
+
+<head>
+    <title>사용자 정보 변경</title>
+    <meta charset="UTF-8">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .header {
+            background-color: #F4EEE3;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-size: 15px;
+            color: #707070;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .nav a {
+            margin-right: 5px;
+            text-decoration: none;
+            color: #707070;
+            font-size: 10px;
+        }
+
+        .nav a:hover {
+            color: #D6D8C5;
+        }
+
+        .container {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            color: #707070;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            font-size: 14px;
+            color: #707070;
+            outline: none;
+        }
+
+        .form-group button {
+            background: none;
+            border: none;
+            color: #707070;
+            cursor: pointer;
+            font-size: 14px;
+            outline: none;
+            padding: 0;
+            margin-right: 10px;
+        }
+
+        .form-group button:hover {
+            color: #D6D8C5;
+        }
+
+        .username-group {
+            display: none;
+        }
+
+        .product-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .product-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            background-color: gray;
+        }
+
+        .product-item .product-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-grow: 1;
+        }
+
+        .product-item .product-info span {
+            margin-bottom: 5px;
+            text-align: right;
+        }
+
+        .product-item .product-info .product-name {
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .product-item .product-info .product-price {
+            color: #707070;
+            text-align: right;
+        }
+
+        .product-item .buttons {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        @media screen and (min-width: 601px) {
+            .logo-text {
+                font-size: 30px;
+            }
+
+            .header {
+                padding: 20px 40px;
+            }
+
+            .nav {
+                display: flex;
+                align-items: center;
+            }
+
+            .nav a {
+                margin-right: 15px;
+                text-decoration: none;
+                color: #707070;
+                display: inline-block;
+                font-size: 18px;
+            }
+
+            .nav a:hover {
+                color: #D6D8C5;
+            }
+
+            .container {
+                margin-top: 40px;
+                max-width: 450px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .form-group input[type="text"],
+            .form-group input[type="password"] {
+                width: 98%;
+                padding: 15px;
+            }
+
+            .product-list-container {
+                margin-bottom: 0;
+            }
+
+            .product-item img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .product-item .product-info {
+                align-items: center;
+                text-align: left;
+            }
+
+            .product-item .product-info span {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <th:block th:replace="header :: header"></th:block>
+
+    <div class="container" sec:authorize="hasAuthority('ROLE_ADMIN')">
+        <div class="product-item" th:if="${products.size() > 0}" th:each="product : ${products}">
+            <img th:if="${product.getImages().size()} > 0" th:src="@{${product.getImages().get(0).getLink()}}">
+            <img th:if="${product.getImages().size()} == 0">
+            <div class="product-info">
+                <span th:text="${product.getName()}" class="product-name">상품 3</span>
+                <span th:text="${product.getCost()} + '원'" class="product-price">가격: 상품 3 가격</span>
+            </div>
+            <form method="post" th:action="@{/delete/product(id=${product.getId()})}">
+                <button type="submit">삭제</button>
+            </form>
+        </div>
+        <div th:if="${products.size()} == 0">
+            <span>등록된 상품이 없습니다.</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <form method="post" action="/change/user/info">
+            <div class="form-group">
+                <button type="button" onclick="toggleField('password')">비밀번호 변경</button>
+                <button type="button" onclick="toggleField('username')">사용자명 변경</button>
+            </div>
+            <div class="form-group password-group">
+                <label for="newPassword">새로운 비밀번호</label>
+                <input type="password" id="newPassword" name="newPassword" placeholder="새로운 비밀번호를 입력해주세요">
+            </div>
+            <div class="form-group confirm-password-group">
+                <label for="checkPassword">새로운 비밀번호 확인</label>
+                <input type="password" id="checkPassword" name="checkPassword"
+                       placeholder="새로운 비밀번호를 다시 입력해주세요">
+            </div>
+            <div class="form-group username-group">
+                <label for="newNickname">새로운 사용자명</label>
+                <input type="text" id="newNickname" name="newNickname" placeholder="새로운 사용자명을 입력해주세요">
+            </div>
+            <div class="form-group">
+                <label for="password">현재 비밀번호</label>
+                <input type="password" id="password" name="password" placeholder="현재 비밀번호를 입력해주세요">
+            </div>
+            <div class="form-group">
+                <button type="submit">정보 변경</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function toggleField(field) {
+            const passwordGroup = document.querySelector('.password-group');
+            const confirmGroup = document.querySelector('.confirm-password-group');
+            const usernameGroup = document.querySelector('.username-group');
+
+            if (field === 'password') {
+                passwordGroup.style.display = 'block';
+                confirmGroup.style.display = 'block';
+                usernameGroup.style.display = 'none';
+            } else if (field === 'username') {
+                passwordGroup.style.display = 'none';
+                confirmGroup.style.display = 'none';
+                usernameGroup.style.display = 'block';
+            }
+        }
+
+        function main() {
+            location.href = "/view/main";
+        }
+    </script>
+</body>
+
+</html>
